@@ -10,33 +10,33 @@
 
 
 
+// 1. ARRAY - LISTA DELLE MAIL
+let mail = [`alessandro@boolean.it`, `pecchini@boolean.it`, `henri@boolean.it`, `francesco@boolean.it`, `giuseppe@boolean.it`];
+console.log(mail);
 
-// 1. DICHIARO LE VARIABILI
+// DICHIARO LE VARIABILI
 // mail inserita
-const userMail = prompt('Inserisci la tua mail:');
+const userMail = prompt('Inserisci la tua mail:   (mail valide in console)');
 console.log(`Mail inserita:` + ` ` + userMail);
 // variabile booleana di controllo
 let ctrl = false;
 
 
-// 1. ARRAY - LISTA DELLE MAIL
-let mail = [`alessandro@boolean.it`, `pecchini@boolean.it`, `henri@boolean.it`, `francesco@boolean.it`, `giuseppe@boolean.it`, `12`];
-console.log(mail);
 
 // 2. CONTROLLO DELLA LISTA MAIL
 for (i = 0; i < mail.length; i++) {
 
     if (mail[i] == userMail) {
         ctrl = true;
-    } else {
-        ctrl = false;
     }
 
 }
 
-
 console.log(ctrl);
 
+
+
+// 3. ALERT DEL RISULTATO
 if (ctrl == false) {
     alert(`Mail non riconosciuta`);
 } else {
@@ -44,7 +44,7 @@ if (ctrl == false) {
 }
 
 
-
+// ------------------------------
 
 
 // ALTRO

@@ -20,10 +20,34 @@ let ctrl = false;
 
 
 // 1. ARRAY - LISTA DELLE MAIL
-let mail = [`alessandro@boolean.it`, `pecchini@boolean.it`, `henri@boolean.it`, `francesco@boolean.it`, `giuseppe@boolean.it`];
+let mail = [`alessandro@boolean.it`, `pecchini@boolean.it`, `henri@boolean.it`, `francesco@boolean.it`, `giuseppe@boolean.it`, `12`];
 console.log(mail);
 
 // 2. CONTROLLO DELLA LISTA MAIL
 for (i = 0; i < mail.length; i++) {
-    if (mail[i] == userMail)
+
+    if (mail[i] == userMail) {
+        ctrl = true;
+    } else {
+        ctrl = false;
+    }
+
 }
+
+
+console.log(ctrl);
+
+if (ctrl == false) {
+    alert(`Mail non riconosciuta`);
+} else {
+    alert(`Mail trovata!`);
+}
+
+
+
+
+
+// ALTRO
+function refreshPage(){
+    window.location.reload();
+} 

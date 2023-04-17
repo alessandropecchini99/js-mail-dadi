@@ -6,3 +6,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.button-resfresh {
+    background-color: grey;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
